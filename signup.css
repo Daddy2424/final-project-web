@@ -1,0 +1,111 @@
+header{
+  background-color: #212529;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+
+.form-section {
+  /* border: 2px solid gray; */
+  border-radius: 5px;
+  text-align: left;
+  padding: 40px 30px;
+  background-color: rgba(192, 191, 202, 0.385);
+  
+}
+
+
+
+.h1-form {
+  display: block;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.First-name-form{
+  margin-right: 10px;
+}
+
+
+.First-name-form,
+.Last-name-form,
+.email-form,
+.password-form,
+.phone-form {
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.244);
+  cursor: pointer;
+
+}
+
+.First-name-form:hover,
+.Last-name-form:hover,
+.email-form:hover,
+.password-form:hover,
+.phone-form:hover{
+  background-color: rgba(167, 166, 166, 0.132);
+}
+
+
+.email-form,
+.password-form,
+.phone-form{
+  width: 100%;
+}
+
+.signup-butt-form {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  background-color: rgb(112, 112, 112);
+  color: white;
+}
+
+.Home-icon{
+  width: 20px;
+  margin-right: 3px;
+  
+}
+
+.radio-div{
+  margin-left: 15px;
+}
+
+
+
+.iconCont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon2 {
+  height: 4em;
+}
+#icon{
+  float: right;
+}
+
+footer {
+  background-color: #212529;
+}
+
+#aboutInfo {
+  border-bottom: solid 2px white;
+}
+
+#aboutHead {
+  color: rgb(28, 115, 168);
+}
+
+#aboutText {
+  color: white;
+}

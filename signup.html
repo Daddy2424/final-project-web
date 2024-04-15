@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<header>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img class="Home-icon" src="home-icon.png">
+            <strong>Rent Your Future</strong>
+        </a>
+    </div>
+</header>
+
+<main>
+
+    <!-- <h1 class="signup-h1">sign up page</h1> -->
+
+    <section class="form-section">
+        <h1 class="h1-form">Create your account</h1>
+        <form id="form">
+            <input class="First-name-form" type="text" placeholder="First name" id="FirstName">
+
+            <input class="Last-name-form" type="text" placeholder="Last name" id="LastName"> 
+            <br>
+            <input class="phone-form" type="tel" placeholder="Phone" id="Phone">
+            <br>
+            <input class="email-form" type="text" placeholder="Email" id="Email">
+            <br>
+            <input class="password-form" type="password" placeholder="Password" id="Pass">
+            <br>
+            <div class="radio-div">
+                <p>Please select one of the following options:</p>
+                <input type="radio" name="user-type" id="landlord" value="landlord">
+                <label>Landlord</label><br>
+                <input type="radio" name="user-type" id="tenent" value="tenent">
+                <label>tenent</label><br>
+            </div>
+            <br>
+            <button class="signup-butt-form" id="signUpBtn">Sign Up</button>
+        </form>
+
+    </section>
+</main>
+      <footer class="text-muted py-5">
+        <div class="container">
+            <div class="col-sm-8 col-md-7 py-4" id="aboutInfo">
+                <h4 id="aboutHead">About</h4>
+                <p id="aboutText">The Rent your future with us will bring you an easier ability to find the correct home
+                    for you in Alberta, Ontario, and British Columbia.
+                    Finding a home that fits your budget has never become easier.</p>
+            </div>
+            <div class="icon2">
+                <a href="#" id="backTop"><img src="angle-up.png" alt="icon" id="icon"></a>
+            </div>
+            <!-- </p> -->
+
+        </div>
+        </div>
+    </footer>
+    <script src="signup.js"></script>
+</body>
+</html>
