@@ -22,7 +22,7 @@ async function signupPageDisplay(){
   console.log(file);
 
   if(file.locked == false){
-    location.href = 'signUp.html';
+    location.href = 'signup.html';
   }
 }
 
