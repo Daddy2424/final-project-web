@@ -13,9 +13,20 @@ body{
   background-color: #343a40;
 }
 
-.singup-header-a,
+
 .singup-header-p{
   color: white;
+}
+.singup-header-a{
+  background: transparent;
+  color: white;
+  border: none;
+  text-decoration: underline;
+}
+
+.singup-header-a:hover{
+  color: blue;
+
 }
 
 .input-header-1,
@@ -243,8 +254,10 @@ padding-bottom: 0;
   /* Your provided styling for the filters */
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: #212529;
+  justify-content: end;
+  gap: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 #filters label {
@@ -259,11 +272,17 @@ padding-bottom: 0;
 }
 
 #filters button {
-  background-color: #707070;
+  background-color: whitesmoke;
+  color: black;
+  border: 1px solid black;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 11em;
+  transition: .3s ease-in-out;
+}
+#filters button:hover{
+  background-color: black;
   color: white;
-  border: none;
-  padding-right: 5px;
-  margin-right: 10px;
 }
 
 
@@ -489,4 +508,5 @@ main h1{
   color: black;
   position: absolute;
 }
+
 
