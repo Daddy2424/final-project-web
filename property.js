@@ -944,69 +944,94 @@ function fetchProperties(city) {
 fetchProperties(city);
 
 
+// Get references to the select element and the Apply button
+const sortSelect = document.getElementById('sort');
+const applyButton = document.getElementById('applyFilters');
 
+// Define variables to track sorting options
+let valueAscending = false;
+let valueDescending = false;
 
+// Add event listener to the select element to track changes
+sortSelect.addEventListener('change', function() {
+    // Update sorting variables based on selected option
+    if (sortSelect.value === 'ascending') {
+        valueAscending = true;
+        valueDescending = false;
+    } else if (sortSelect.value === 'descending') {
+        valueAscending = false;
+        valueDescending = true;
+    } else {
+        valueAscending = false;
+        valueDescending = false;
+    }
+});
 
+let filteredItems = propertyListings.slice();
 
+// Add event listener to the Apply button to trigger sorting
+applyButton.addEventListener('click', function() {
+    filterListings();
+    document.getElementById("main-div").innerHTML = '';
 
+    // Render filtered listings for the selected city
+    for (let i = 0; i < filteredItems.length; i++) {
+        const property = filteredItems[i];
+        console.log(property) // Access current property object
+  
+        if (property.location == city) {
+            document.getElementById("main-div").innerHTML += `
+                <div class="col cursor">
+                    <div class="card shadow-sm">
+                        <img src="${property.imageUrl}" class="bd-placeholder-img card-img-top" width="100%" height="225" aria-label="Property Image" alt="Property Image">
+                        <div class="card-body">
+                            <h5 class="card-title">${property.title}</h5>
+                            <p class="card-text">Location: ${property.location}</p>
+                            <p class="card-text">Price: ${property.price}</p>
+                            <p class="card-text">Bedrooms: ${property.bedrooms}</p>
+                            <p class="card-text">Bathrooms: ${property.bathrooms}</p>
+                            <p class="card-text">Area: ${property.area}</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">${property.id}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+    }
+  
+  
+});
+
+// Function to filter listings based on sorting options
 function filterListings() {
-  const valueAscending = document.getElementById('sortAscending');
-  const valueDescending = document.getElementById('sortDescending');
-  const allSort = document.getElementById('sortAll')
+     // Create a copy of propertyListings array
 
-  let filteredItems = propertyListings.slice(); // Create a copy of propertyListings array
-
-
-  if (valueAscending.checked) {
-      filteredItems.sort((a, b) => {
-          const priceA = parseFloat(a.price.replace('$', '').replace(/,/g, ''));
-          const priceB = parseFloat(b.price.replace('$', '').replace(/,/g, ''));
-          return priceA - priceB;
-      });
-  } else if (valueDescending.checked) {
-      filteredItems.sort((a, b) => {
-          const priceA = parseFloat(a.price.replace('$', '').replace(/,/g, ''));
-          const priceB = parseFloat(b.price.replace('$', '').replace(/,/g, ''));
-          return priceB - priceA;
-      });
-  } else {
-     filterListings
-  }
-
-  //Clear previous listings
-  document.getElementById("main-div").innerHTML = '';
-
-  // Render filtered listings for the selected city
-  for (let i = 0; i < filteredItems.length; i++) {
-      const property = filteredItems[i]; // Access current property object
-
-      if (property.location == city) {
-          document.getElementById("main-div").innerHTML += `
-              <div class="col cursor">
-                  <div class="card shadow-sm">
-                      <img src="${property.imageUrl}" class="bd-placeholder-img card-img-top" width="100%" height="225" aria-label="Property Image" alt="Property Image">
-                      <div class="card-body">
-                          <h5 class="card-title">${property.title}</h5>
-                          <p class="card-text">Location: ${property.location}</p>
-                          <p class="card-text">Price: ${property.price}</p>
-                          <p class="card-text">Bedrooms: ${property.bedrooms}</p>
-                          <p class="card-text">Bathrooms: ${property.bathrooms}</p>
-                          <p class="card-text">Area: ${property.area}</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                              <div class="btn-group">
-                                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                              </div>
-                              <small class="text-muted">${property.id}</small>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          `;
-      }
-  }
-
+    if (valueAscending) {
+        // Sorting logic for ascending order\
+        filteredItems.sort((a, b) => {
+            const priceA = parseFloat(a.price.replace('$', '').replace(/,/g, ''));
+            const priceB = parseFloat(b.price.replace('$', '').replace(/,/g, ''));
+            return priceA - priceB;
+        });
+    } else if (valueDescending) {
+        // Sorting logic for descending order
+        filteredItems.sort((a, b) => {
+            const priceA = parseFloat(a.price.replace('$', '').replace(/,/g, ''));
+            const priceB = parseFloat(b.price.replace('$', '').replace(/,/g, ''));
+            return priceB - priceA;
+        });
+    }
 }
 
 
-document.getElementById('applyFilters').addEventListener('click', filterListings);
+
+
+  //Clear previous listings
+
+
