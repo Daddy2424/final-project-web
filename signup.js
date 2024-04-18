@@ -64,7 +64,7 @@ signupBtn.addEventListener("click", async (event)   => {
       if(!response.ok){
         console.log("Something went wrong check js file");
       } 
-      window.location.href = 'landlord.html';
+      window.location.href = 'admin.html';
   }
   else if (tenent && firstName && lastName && !isNaN(phone) && email && password) {
     
