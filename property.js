@@ -823,7 +823,7 @@ for (let i = 0; i < propertyListings.length; i++) {
           <p class="card-text">Area: ${property.area}</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary viewBtn" id="viewBtn" onclick = "rentpage()">View</button>
               <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
             </div>
             <small class="text-muted">${property.id}</small>
@@ -833,6 +833,12 @@ for (let i = 0; i < propertyListings.length; i++) {
     </div>
   `;
   }
+ 
+}
+
+function rentpage(){
+    console.log('brhhhh')
+    window.location.href = 'rent.html';
 }
 
 
@@ -855,7 +861,7 @@ function createPropertyCard(property) {
         <p class="card-text">Area: ${property.area}</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary" id="viewBtn">View</button>
             <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
           </div>
           <small class="text-muted">${property.id}</small>
