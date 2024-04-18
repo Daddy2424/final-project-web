@@ -73,7 +73,7 @@
       </div>
     </div>
   </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
+  <div class="navbar navbar-dark bg-dark shadow-sm" id="navbar">
     <div class="container">
       <a href="index.html" class="navbar-brand d-flex align-items-center">
         <img class="Home-icon" src="home-icon.png">
@@ -87,78 +87,68 @@
 </header>
 
 <main>
+  <div class="h1Div" id="h1Div">
+    <h1 id="placeName">Finding places made simple..</h1>
+    <p>finding the perfect workspace has never been easier.</p>
+  </div>
 
-<!-- province selection container -->
-  <div class="provContain">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 " id="city-div">
-      
-      <!-- alberta -->
-      <div class="col">
-        
-        <button onclick="ShowingCity(albertaCities)" style="border: none; background-color: white;">
 
-        <div class="card shadow-sm province">
-          <svg class="bd-placeholder-img card-img-top new-card" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <image href="https://upload.wikimedia.org/wikipedia/commons/9/92/Downtown_Calgary_2020-2.jpg" width="29.6em" height="100%" />
-            <text x="50%" y="5%" fill="#eceeef" dy=".3em">ALBERTA</text>
-          </svg>
 
-          <div class="card-body provBody">
-            <p class="card-text">Explore diverse, picturesque living options in Alberta's neighborhoods.</p>
-          </div>
+  <div class="provinces" id="city-div">
+    <div class="ontario" id="ontario">
+      <div class="text1">
+        <div class="name1">
+          <h3>ONTARIO</h3>
         </div>
-
-      </button>
-
-      </div>
-      
-
-      <!-- ontario -->
-      <div class="col">
-
-        <button onclick="ShowingCity(ontarioCities)" style="border: none; background-color: white;">
-
-
-        <div class="card shadow-sm province">
-          <svg class="bd-placeholder-img card-img-top new-card" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <image href="https://ultimateontario.com/wp-content/uploads/2020/06/Ontario-Staycation-Ideas-Feature-1400x788.jpg" width="29.6em" height="100%" />
-            <text x="50%" y="5%" fill="#eceeef" dy=".3em">ONTARIO</text>
-          </svg>
-
-          <div class="card-body provBody">
-            <p class="card-text">Ontario's rental market offers diverse options amidst its cultural vibrancy.</p>
-          </div>
-        </div>
-      </button>
-      </div>
-
-      <!-- British colombia-->
-      <div class="col">
-
-        <button onclick="ShowingCity(britishCities)" style="border: none; background-color: white;">
-
-        <div class="card shadow-sm province">
-          <svg class="bd-placeholder-img card-img-top new-card" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <image href="https://cdn.vox-cdn.com/thumbor/p_kUTuBvcFpA6olPe6WzPqWCM5E=/161x0:1024x575/1400x788/filters:focal(161x0:1024x575):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/2440335/3348972199_9947c4fd78_b_d.0.jpg" width="29.6em" height="100%" />
-            <text x="50%" y="5%" fill="#eceeef" dy=".3em">BRITISH COLOMBIA</text>
-          </svg>
-
-          <div class="card-body provBody">
-            <p class="card-text"> Refined rentals harmonize with its breathtaking natural beauty.</p>
-          </div>
+        <div class="description1">
+          <p>Ontario's rental market offers diverse options amidst its cultural vibrancy.</p>
         </div>
       </div>
     </div>
 
-  </button>
-  
+    <div class="alberta" id="alberta">
+      <div class="text2">
+        <div class="name2">
+          <h3>ALBERTA</h3>
+        </div>
+        <div class="description2">
+          <p>Explore diverse, picturesque living options in Alberta's neighborhoods.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="BC" id="BC">
+      <div class="text3">
+        <div class="name3">
+          <h3>BRITISH COLOMBIA</h3>
+        </div>
+        <div class="description3">
+          <p>Refined rentals harmonize with its breathtaking natural beauty.</p>
+        </div>
+      </div>
+    </div>
   </div>
-<!-- back div -->
-  <div id="back-div"></div>
-  
+  <div id="back-div" class="backBtn"></div>
+
+  <div class="aboutMe" id="aboutMe">
+    
+    <div class="text">
+      <h3>About rent your future</h3>
+      <p>Rent Your Future revolutionizes workspace rental by providing a streamlined platform for users. With an intuitive interface, diverse options, and easy booking process, finding the ideal workspace has never been simpler. Whether it's a private office, coworking space, or meeting room, Rent Your Future offers flexibility and convenience. Experience productivity and efficiency in your work environment with Rent Your Future's innovative approach to workspace rental.</p>
+      <div class="skills">
+        <span>Advantages of using rent your future : </span>
+        <ul>
+          <li>Flexibility</li>
+          <li>Convenience</li>
+          <li>Cost-effective</li>
+          <li>Productivity</li>
+          <li>Networking opportunities</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div id="back-div"></div> -->
 </main>
 
  <!--david worked on the footer-->
