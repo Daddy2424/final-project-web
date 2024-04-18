@@ -85,20 +85,14 @@
 </header>
 
 <main>
-   <div id="filters">
-          <label for="categoryFilter">Filter by category</label>
-
-          <label>
-            <input type="radio" name="sort" value="all" id="sortAll">All
-          </label>
-        
-          <label>
-            <input type="radio" name="sort" value="asc" id="sortAscending">Ascending
-          </label>
-        
-          <label>
-            <input type="radio" name="sort" value="desc" id="sortDescending">Descending
-          </label>
+   <div id="filters" class="filters">
+          <div class="sort">
+            <select name="sorting" id="sort">
+              <option value="sortall" id="sortAll" >All</option>
+              <option value="ascending" id="sortAscending">Acsending</option>
+              <option value="descending" id="sortDescending">Descending</option>
+            </select>
+          </div>
 
           <button id="applyFilters">Apply</button>
         
