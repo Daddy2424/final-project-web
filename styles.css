@@ -1,30 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
 .col-md-4{
   background-color: #343a40;
 }
 
-
+.singup-header-a,
 .singup-header-p{
   color: white;
-}
-.singup-header-a{
-  color: white;
-  background: transparent;
-  border: none;
-  text-decoration: underline;
 }
 
 .input-header-1,
 .input-header-2{
   border-radius: 5px;
   padding: 5px 15px;
-}
-
-.usernameContainer{
-  background-color: aqua;
-}
-
-.userName{
-  color: white;
 }
 
 .login-butt-header{
@@ -49,15 +46,13 @@
 .Home-icon{
   width: 20px;
   margin-right: 3px;
-  
+  margin-right: 10px;
 }
 
 
 .row{
   padding: 3em;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 .provContain{
   display: flex;
@@ -111,6 +106,8 @@
 
 footer {
     background-color: #212529;
+    margin-top: 5em;
+    
 }
 
 #aboutInfo{
@@ -222,11 +219,10 @@ padding-top: 10px;
 padding-bottom: 0;
 }
 
-.back-div{
-  display: block; 
-  text-align: center;
-  color: #212529;
-  font-size: 30px;
+.back-div{ 
+  text-decoration: none;
+  color: black;
+  margin-left: 45em;
 }
 
 
@@ -269,3 +265,228 @@ padding-bottom: 0;
   padding-right: 5px;
   margin-right: 10px;
 }
+
+
+/* Deepu changes */
+.h1Div{
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.h1Div p{
+  margin-top: -60px;
+}
+
+
+
+
+.text{
+  padding: 20px;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 4em;
+}
+.text h3{
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+
+main h1{
+  text-align: center;
+  padding: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.provinces{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.provinces .ontario{
+  background-image: url(ontario.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+  height: 14em;
+  margin: 20px;
+  transition: .5s;
+  box-shadow: 10px 5px 15px black;
+  border-radius: 5px;
+}
+
+
+.provinces .alberta{
+  background-image: url(alberta.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 14em;
+  margin: 20px;
+  box-shadow: 10px 5px 15px black;
+  border-radius: 5px;
+}
+
+.provinces .BC{
+  background-image: url(bcorg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 14em;
+  margin: 20px;
+  box-shadow: 10px 5px 15px black;
+  border-radius: 5px;
+}
+
+
+.text1{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+.name1 h3{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  width: 100%;
+  transition: 1s ease-in-out;
+}
+
+.description1{
+  width: 100%;
+  opacity: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  color: white;
+  transition: 1s ease-in-out;
+  margin-left: 15px;
+}
+
+.text1:hover .name1 h3 {
+  width: 10%;
+  opacity: 1;
+}
+
+.text1:hover .description1 {
+  opacity: 1;
+}
+
+
+.provinces .alberta .text2{
+  /* background-color: aqua; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+.name2 h3{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  width: 100%;
+  transition: 1s ease-in-out;
+}
+
+.description2{
+  width: 100%;
+  opacity: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  color: white;
+  transition: 1s ease-in-out;
+  margin-left: 15px;
+}
+
+.text2:hover .name2 h3 {
+  width: 10%;
+}
+
+.text2:hover .description2 {
+  opacity: 1;
+  width: 40%;
+}
+
+.provinces .BC .text3{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+.name3 h3{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  width: 100%;
+  transition: 1s ease-in-out;
+}
+
+.description3{
+  width: 100%;
+  opacity: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  color: white;
+  transition: 1s ease-in-out;
+  margin-left: 15px;
+}
+
+.text3:hover .name3 h3 {
+  width: 20%;
+}
+
+.text3:hover .description3 {
+  width: 40%;
+  opacity: 1;
+}
+
+
+.createdRow{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  padding: 20px;
+  padding-left: 90px;
+}
+
+.cityCard{
+  /* background-color: aqua; */
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 10px 5px 13px black;
+  height: 10em;
+  margin-bottom: 2em;
+}
+
+.cityCard img{
+  width: 100%;
+  height: 10em;
+  border-radius: 5px;
+}
+.cityCard h5{
+  color: black;
+  position: absolute;
+}
+
