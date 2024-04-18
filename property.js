@@ -890,6 +890,34 @@ function showData(){
     console.log("Data received successfully:", data);
     // Process the received data here
 
+    for (let i = 0; i < propertyListings.length; i++) {
+        const property = propertyListings[i]; // Access current property object
+      
+            document.getElementById("main-div").innerHTML += `
+          <div class="col cursor">
+            <div class="card shadow-sm">
+              <img src="${property.imageUrl}" class="bd-placeholder-img card-img-top" width="100%" height="225" aria-label="Property Image" alt="Property Image">
+              <div class="card-body">
+                <h5 class="card-title">${property.title}</h5>
+                <p class="card-text">Location: ${property.location}</p>
+                <p class="card-text">Price: ${property.price}</p>
+                <p class="card-text">Bedrooms: ${property.bedrooms}</p>
+                <p class="card-text">Bathrooms: ${property.bathrooms}</p>
+                <p class="card-text">Area: ${property.area}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary viewBtn" id="viewBtn" onclick = "rentpage()">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">${property.id}</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+       
+      }
+
   
     console.log(data[0].imgUrl)
   for(let i = 0; i < data.length; i++ ){
