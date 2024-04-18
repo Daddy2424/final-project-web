@@ -9,6 +9,7 @@ const bc = document.getElementById('BC');
 const aboutMe = document.getElementById('aboutMe');
 const h1div = document.getElementById('h1Div');
 const PlaceName = document.getElementById('placeName');
+const contact =document.getElementById('contact');
 
 
 async function signupPageDisplay(){
@@ -28,7 +29,7 @@ async function signupPageDisplay(){
   console.log(file);
 
   if(file.locked == false){
-    location.href = 'signup.html';
+    location.href = 'signUp.html';
   }
 }
 
@@ -59,17 +60,18 @@ async function logIn(){
   if (responseData.Email === emailVal && responseData.Password === passwordVal) {
     console.log("Login successful!");
     profileContainer.style.display = 'none';
+    contact.style.display = 'none';
     
     userName.textContent = `${responseData.FirstName} ${responseData.LastName}`;
 
     usernameContainer.style.display = 'flex';
 
   } else if (responseData.Email !== emailVal) {
-    console.log("Oops, the email is incorrect");
+    alert("Oops, the email is incorrect");
   } else if (responseData.Password !== passwordVal) {
-    console.log("Oops, the password is incorrect");
+    alert("Oops, the password is incorrect");
   } else {
-    console.log("Please enter valid details");
+    alert("Please enter valid details");
   }
 
 }
