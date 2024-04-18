@@ -1,0 +1,120 @@
+/* Header */
+.Home-icon {
+    width: 20px;
+    margin-right: 3px;
+}
+
+/* Admin Properties */
+.properties-div {
+    width: 50%;
+    height: 60vh;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+
+
+
+/* Renting */
+.form-section{
+    width: 30%;
+    margin-right: 20px;
+}
+
+
+
+/* Request style */
+
+main {
+    display: flex;
+    height: 74vh;
+}
+
+
+
+.form-section {
+    border-radius: 5px;
+    padding: 40px 30px;
+    background-color: rgba(192, 191, 202, 0.385);
+    
+}
+
+
+
+.h1-form {
+    display: block;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.First-name-form{
+    margin-right: 10px;
+}
+
+
+.First-name-form,
+.Last-name-form,
+.email-form,
+.password-form,
+.phone-form {
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.244);
+    cursor: pointer;
+
+}
+
+.First-name-form:hover,
+.Last-name-form:hover,
+.email-form:hover,
+.password-form:hover,
+.phone-form:hover{
+    background-color: rgba(167, 166, 166, 0.132);
+}
+
+
+.email-form,
+.password-form,
+.phone-form{
+    width: 100%;
+}
+
+.signup-butt-form {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: rgb(112, 112, 112);
+    color: white;
+}
+
+.Home-icon{
+    width: 20px;
+    margin-right: 3px;
+    
+}
+
+
+/* Footer */
+footer {
+    background-color: #212529;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+.container {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
+
+
+

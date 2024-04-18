@@ -1,0 +1,128 @@
+/* Header */
+.Home-icon {
+    width: 20px;
+    margin-right: 3px;
+}
+
+
+/* Main */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Admin Info */
+.admin-info-cl {
+    border: 1px rgb(222, 213, 213) solid;
+    height: 90vh;
+    width: 40vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgb(193, 190, 190);
+}
+
+.admin-img {
+    width: 100px;
+    border-radius: 50px;
+}
+
+.admin-img:hover {
+    box-shadow: 5px 5px 5px rgb(193, 190, 190);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.rent{
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    border-radius: 5px;
+}
+
+
+/* Admin Properties */
+.properties-div {
+    width: 75%;
+    height: 60vh;
+    overflow-y: auto;
+    box-shadow: 5px 5px 5px rgb(193, 190, 190);
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.properties-div::-webkit-scrollbar {
+    width: 15px;
+}
+
+.properties-div::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+.properties-div::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+
+.properties-div::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Footer */
+footer {
+    background-color: #212529;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .admin-info-cl {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .properties-div {
+        width: 100%;
+        height: auto;
+        max-height: 50vh;
+    }
+}

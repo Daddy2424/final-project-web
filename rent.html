@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Rent</title>
+    <link rel="stylesheet" href="rent.css">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img class="Home-icon" src="home-icon.png">
+            <strong>Rent Your Future</strong>
+        </a>
+    </div>
+</header>
+
+<!-- Main -->
+<main>
+    <div class="col cursor properties-div row justify-content-end" id="properties-id">
+        <div class="card shadow-sm">
+            <img src="https://www.jkphotosanddesign.com/wp-content/media/real-estate-3-1280x534.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" aria-label="Property Image" alt="Property Image">
+            <div class="card-body">
+                <h5 class="card-title">Cozy Bungalow near Parks</h5>
+                <p class="card-text">Location: Calgary</p>
+                <p class="card-text">Price: $350,000</p>
+                <p class="card-text">Bedrooms: 3</p>
+                <p class="card-text">Bathrooms: 2</p>
+                <p class="card-text">Area: 1,500 sqft</p>
+                <div class="d-flex justify-content-between align-items-center">
+                </div>
+            </div>
+        </div>
+     </div>
+    
+<!-- Contact-->
+    <section class="form-section">
+        <h1 class="h1-form">Contact Property</h1>
+        <form>
+            <input class="First-name-form" type="text" placeholder="Name">
+            <br>
+            <input class="phone-form" type="tel" placeholder="Phone">
+            <br>
+            <input class="email-form" type="email" placeholder="Email">
+            <br>
+            <input class="password-form" type="price" placeholder="$350,000">
+            <br>
+            <button class="signup-butt-form" id="RequestBtn" onclick="RequestFunc()">Request to rent</button>
+        </form>
+
+    </section>
+</main>
+    <!-- Footer -->
+    <footer class="text-muted py-5">
+        <div class="container">
+            <div class="col-sm-8 col-md-7 py-4" id="aboutInfo">
+                <h4 id="aboutHead">About</h4>
+                <p id="aboutText">The Rent your future with us will bring you an easier ability to find the correct home
+                    for you in Alberta, Ontario, and British Columbia.
+                    Finding a home that fits your budget has never become easier.</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+<!-- Script -->
+<script src="rent.js"></script>
+</body>
+</html>
